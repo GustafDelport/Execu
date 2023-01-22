@@ -1,0 +1,29 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav class="mat-elevation-z10" mode="push">
+    <img class="logo-svg" src="assets/Logo.svg" alt="Logo">
+    <ul>
+      <li><p class="header-text">About Us</p></li>
+      <li><p class="header-text">Wire Cutting</p></li>
+      <li><p class="header-text">Additional Services</p></li>
+      <li><p class="header-text">Contact Us</p></li>
+    </ul>
+  </mat-sidenav>
+  <mat-sidenav-content class="sidenav-content">
+    <mat-toolbar color="accent">
+      <button mat-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <img *ngIf="!sidenav.opened" class="logo-svg" src="assets/Logo.svg" alt="Logo">
+    </mat-toolbar>
+
+    <app-about-us class="about-us component"></app-about-us>
+    <app-wire-cutting class="wire-cutting component"></app-wire-cutting>
+    <app-aditional-services class="additional-services component"></app-aditional-services>
+    <app-contact-us class="contact-us component"></app-contact-us>
+
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<app-footer></app-footer>
+
+
