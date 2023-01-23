@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-additional-service-item',
@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./additional-service-item.component.scss']
 })
 export class AdditionalServiceItemComponent implements OnInit {
+
+  @Input()
+  title: string;
+
+  @Input()
+  body: string
 
   constructor() { }
 

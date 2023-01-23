@@ -1,0 +1,43 @@
+@import "src/variables";
+
+.item-container{
+  max-height: 25rem;
+  min-height: 25rem;
+  position: relative;
+}
+
+.heading{
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  color: $primary;
+}
+
+.body-text{
+  text-align: center;
+  color: $primary;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2rem;
+}
+
+.about-us-button{
+  color: $primary;
+  width: 9rem;
+  height: 3rem;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.button-div{
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  left: 0;
+}

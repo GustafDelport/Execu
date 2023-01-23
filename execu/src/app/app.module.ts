@@ -9,8 +9,11 @@ import { MaterialModule } from "./material.module";
 import {WireCuttingComponent} from "./components/wire-cutting/wire-cutting.component";
 import {AboutUsComponent} from "./components/about-us/about-us.component";
 import {ContactUsComponent} from "./components/contact-us/contact-us.component";
-import {AditionalServicesComponent} from "./components/aditional-services/aditional-services.component";
+import {AdditionalServicesComponent} from "./components/aditional-services/additional-services.component";
 import {MatCarouselModule} from "ng-mat-carousel";
+import {
+  AdditionalServiceItemComponent
+} from "./components/aditional-services/additional-service-item/additional-service-item.component";
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import {MatCarouselModule} from "ng-mat-carousel";
     WireCuttingComponent,
     AboutUsComponent,
     ContactUsComponent,
-    AditionalServicesComponent,
+    AdditionalServicesComponent,
+    AdditionalServiceItemComponent,
   ],
   imports: [
     BrowserModule,

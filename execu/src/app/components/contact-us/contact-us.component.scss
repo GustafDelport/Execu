@@ -1,0 +1,28 @@
+@import 'src/variables';
+
+.cont{
+  min-height: 40rem;
+}
+
+.center {
+  margin: auto;
+}
+
+.heading{
+  line-height: 3.2rem;
+  font-size: 3.2rem;
+  color: $gray;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.body-text{
+  line-height: 1.3rem;
+  font-size: 1.3rem;
+  color: $gray;
+  text-align: start;
+}
+
+.contact-card{
+  min-height: 30rem;
+}
