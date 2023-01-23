@@ -10,6 +10,7 @@ import {WireCuttingComponent} from "./components/wire-cutting/wire-cutting.compo
 import {AboutUsComponent} from "./components/about-us/about-us.component";
 import {ContactUsComponent} from "./components/contact-us/contact-us.component";
 import {AditionalServicesComponent} from "./components/aditional-services/aditional-services.component";
+import {MatCarouselModule} from "ng-mat-carousel";
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {AditionalServicesComponent} from "./components/aditional-services/aditio
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
+    MatCarouselModule.forRoot()
 
   ],
   providers: [],

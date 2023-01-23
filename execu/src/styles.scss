@@ -10,12 +10,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 mat-toolbar{
   width: 100% !important;
+  background-color: transparent !important;
 }
 
 mat-card{
   background-color: $card;
   border-radius: $global-radius;
   box-shadow: 0 4px 8px rgba(10, 34, 64, 0.05), 0 1px 2px rgba(10, 34, 64, 0.05), 0 2px 4px rgba(10, 34, 64, 0.05) !important;
+}
+
+.mat-drawer-container{
+  background-color: $white;
 }
 
 /* Importing Bootstrap SCSS file. */

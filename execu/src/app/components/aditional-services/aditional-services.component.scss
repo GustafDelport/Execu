@@ -1,0 +1,43 @@
+@import "src/variables";
+
+.cont{
+  min-height: 50rem;
+  margin-top: 7rem;
+}
+
+.heading{
+  line-height: 3.2rem;
+  font-size: 3.2rem;
+  color: $white;
+  text-align: start;
+}
+
+.body-text{
+  line-height: 1.3rem;
+  font-size: 1.3rem;
+  color: $white;
+  text-align: start;
+}
+
+.about-us-button{
+  color: $primary;
+  background-color: $white;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 10rem;
+  height: 4rem;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+hr{
+  width: 10rem;
+  border-top: 8px solid $secondary;
+  opacity: 100%;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5rem;
+}

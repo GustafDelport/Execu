@@ -1,0 +1,66 @@
+@import "src/variables";
+
+.cont{
+  min-height: 40rem;
+}
+
+.heading{
+  line-height: 3.2rem;
+  font-size: 3.2rem;
+  color: $gray;
+  text-align: start;
+}
+
+.body-text{
+  line-height: 1.3rem;
+  font-size: 1.3rem;
+  color: $gray;
+  text-align: start;
+}
+
+.vertical-line{
+  height: 100%;
+  background-color: $gray;
+  margin-right: 0;
+  margin-left: auto;
+  width: 0.4rem;
+}
+
+.machines{
+  line-height: 1.1rem;
+  font-size: 1.1rem;
+  color: $gray;
+}
+
+.icons{
+  line-height: 1.1rem;
+  font-size: 2.1rem;
+  color: $gray;
+}
+
+::ng-deep{
+  .carousel{
+    border-radius: $global-radius !important;
+  }
+}
+
+
+.span-text{
+  color: $gray;
+  font-weight: 500;
+  line-height: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.span-text-two{
+  color: $primary;
+  font-weight: 400;
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+.center {
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
