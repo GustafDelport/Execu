@@ -14,6 +14,7 @@ import {MatCarouselModule} from "ng-mat-carousel";
 import {
   AdditionalServiceItemComponent
 } from "./components/aditional-services/additional-service-item/additional-service-item.component";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,9 @@ import {
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    MatCarouselModule.forRoot()
+    MatCarouselModule.forRoot(),
+    ReactiveFormsModule,
+    FormsModule
 
   ],
   providers: [],

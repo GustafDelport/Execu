@@ -1,11 +1,11 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav #sidenav class="mat-elevation-z10" mode="push">
+  <mat-sidenav #sidenav (click)="sidenav.toggle()" class="mat-elevation-z10" mode="side">
     <img class="logo-svg-nav" src="assets/Logo.svg" alt="Logo">
     <ul>
-      <li><p class="header-text">About Us</p></li>
-      <li><p class="header-text">Wire Cutting</p></li>
-      <li><p class="header-text">Additional Services</p></li>
-      <li><p class="header-text">Contact Us</p></li>
+      <li><p class="header-text" (click)="gotoAbout()">About Us</p></li>
+      <li><p class="header-text" (click)="gotoWire()">Wire Cutting</p></li>
+      <li><p class="header-text" (click)="gotoServices()">Additional Services</p></li>
+      <li><p class="header-text" (click)="gotoContact()">Contact Us</p></li>
     </ul>
   </mat-sidenav>
   <mat-sidenav-content class="sidenav-content">

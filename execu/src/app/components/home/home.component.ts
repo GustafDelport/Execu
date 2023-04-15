@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ViewportScroller} from "@angular/common";
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _scroller : ViewportScroller) { }
 
   ngOnInit(): void {
+  }
+
+  gotoAbout(){
+    this._scroller.scrollToAnchor("about");
+  }
+
+  gotoServices(){
+    this._scroller.scrollToAnchor("services");
+  }
+
+  gotoContact(){
+    this._scroller.scrollToAnchor("contact");
+  }
+
+  gotoWire(){
+    this._scroller.scrollToAnchor("wire");
   }
 
 }

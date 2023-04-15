@@ -26,3 +26,20 @@
 .contact-card{
   min-height: 30rem;
 }
+
+.form {
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.contact-us-button{
+  color: $primary;
+}
+
+.location:hover{
+  cursor: pointer;
+  color: $primary;
+}
