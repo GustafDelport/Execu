@@ -10,25 +10,23 @@ import {MatSnackBar} from "@angular/material/snack-bar";
   styleUrls: ['./contact-us.component.scss'],
   providers: [EmailService, MatSnackBar]
 })
-export class ContactUsComponent implements OnInit {
+export class ContactUsComponent {
 
   fullName= new FormControl('', [Validators.required]);
   email = new FormControl('', [Validators.required, Validators.email]);
   message = new FormControl('', [Validators.required]);
 
   constructor(
-    private _emailService: EmailService
+    private _emailService: EmailService,
+    private readonly _snackBar: MatSnackBar
   ) { }
-
-  ngOnInit(): void {
-  }
 
   onContactUs(){
     if (this.fullName.valid && this.message.valid && this.email.valid){
       this._emailService.SendEmail(this.fullName.value, this.message.value, this.email.value);
     }
     else {
-      alert('Make sure the required fields are filled in')
+      this._snackBar.open('Please make sure all fields are filled in.', 'Got it', {horizontalPosition: 'center', verticalPosition: 'top'})
     }
   }
 }
