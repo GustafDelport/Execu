@@ -1,9 +1,14 @@
 @import "src/variables";
 
+:host {
+  padding: 1rem;
+}
+
 .item-container{
   max-height: 25rem;
   min-height: 25rem;
   position: relative;
+  padding: 1rem;
 }
 
 .heading{

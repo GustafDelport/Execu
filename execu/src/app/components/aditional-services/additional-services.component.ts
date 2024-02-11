@@ -8,16 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class AdditionalServicesComponent implements OnInit {
 
   cardOneTitle: string = 'Bending';
-  cardOneBody: string = 'Lorem ipsum is dummy text used when you dont know what the fuck to say';
+  cardOneBody: string = 'Lorem ipsum is dummy text used when you dont know what to say';
 
   cardTwoTitle: string = 'Boilermaking';
-  cardTwoBody: string = 'Lorem ipsum is dummy text used when you dont know what the fuck to say';
+  cardTwoBody: string = 'Lorem ipsum is dummy text used when you dont know what to say';
 
   cardThreeTitle: string = 'Turning';
-  cardThreeBody: string = 'Lorem ipsum is dummy text used when you dont know what the fuck to say';
+  cardThreeBody: string = 'Lorem ipsum is dummy text used when you dont know what to say';
 
   cardFourTitle: string = 'Milling';
-  cardFourBody: string = 'Lorem ipsum is dummy text used when you dont know what the fuck to say';
+  cardFourBody: string = 'Lorem ipsum is dummy text used when you dont know what to say';
 
   constructor() { }
 
