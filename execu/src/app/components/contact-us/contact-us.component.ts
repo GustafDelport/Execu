@@ -1,12 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
-import {FormControl, FormGroup, Validators} from "@angular/forms";
-
-export const contactForm = new FormGroup<any>({
-  fullName: new FormControl(null, [Validators.minLength(2), Validators.maxLength(30)]),
-  email: new FormControl(null, Validators.email),
-  message: new FormControl(null, [Validators.minLength(10), Validators.maxLength(1000)]),
-})
+import {FormControl, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-contact-us',
@@ -15,11 +9,9 @@ export const contactForm = new FormGroup<any>({
 })
 export class ContactUsComponent implements OnInit {
 
-  form: FormGroup = contactForm;
-
-  fullName: string;
-  email: string;
-  message: string;
+  fullName= new FormControl('', [Validators.required]);
+  email = new FormControl('', [Validators.required, Validators.email]);
+  message = new FormControl('', [Validators.required]);
 
   constructor(private _router: Router) { }
 

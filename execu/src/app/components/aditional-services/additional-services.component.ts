@@ -10,7 +10,7 @@ export class AdditionalServicesComponent implements OnInit {
   cardOneTitle: string = 'Bending';
   cardOneBody: string = 'Lorem ipsum is dummy text used when you dont know what to say';
 
-  cardTwoTitle: string = 'Boilermaking';
+  cardTwoTitle: string = 'Boiler-making';
   cardTwoBody: string = 'Lorem ipsum is dummy text used when you dont know what to say';
 
   cardThreeTitle: string = 'Turning';

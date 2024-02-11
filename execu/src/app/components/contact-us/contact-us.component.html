@@ -8,19 +8,19 @@
         <form class="form row center">
           <mat-form-field appearance="outline" class="col-md-6">
             <mat-label>Full name</mat-label>
-            <input matInput>
+            <input [formControl]="fullName"  matInput>
           </mat-form-field>
-          <mat-form-field appearance="outline" class="col-md-6">
+          <mat-form-field  appearance="outline" class="col-md-6">
             <mat-label>Email</mat-label>
-            <input matInput>
+            <input [formControl]="email" matInput>
           </mat-form-field>
-          <mat-form-field appearance="outline" class="col-md-12">
+          <mat-form-field  appearance="outline" class="col-md-12">
             <mat-label>Message</mat-label>
-            <textarea matInput placeholder="Enter a message"></textarea>
+            <textarea [formControl]="message" matInput placeholder="Enter a message"></textarea>
           </mat-form-field>
         </form>
         <div class="col-md-12">
-            <button mat-raised-button style="margin-left: 11px" class="contact-us-button row" (click)="onContactUs()">Contact us</button>
+            <button mat-raised-button [color]="'primary'" style="margin-left: 11px" class="contact-us-button row" (click)="onContactUs()">Contact us</button>
         </div>
       </div>
       <hr>
@@ -29,7 +29,7 @@
           <h2 class="center">Contact</h2>
           <h4>072 391 7815</h4>
           <h2 class="center">Henning</h2>
-          <h4>henning@henning.com</h4>
+          <h4>henning@execu.co.za</h4>
         </div>
         <div style="margin-left: 11px" class="col-md-5">
           <h2 class="center">Based in</h2>
@@ -39,3 +39,7 @@
     </mat-card>
   </div>
 </div>
+
+{{ fullName.value }}
+{{ email.value }}
+{{ message.value}}
