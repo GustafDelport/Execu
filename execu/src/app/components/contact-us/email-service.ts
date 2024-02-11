@@ -23,7 +23,7 @@ export class EmailService {
         from_name: name,
         message: message,
         email: email,
-        reply_to: "gustafdelport@gmail.com",
+        reply_to: "henning@execu.co.za",
       }, {
         publicKey: 'Nvv3D_W_xKWq8fO7T',
       })
